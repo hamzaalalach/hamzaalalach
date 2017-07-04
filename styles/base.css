@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #D96459;
+}
+body aside {
+	display: relative;
+	height: 100%;
+	background-color: #8C4646;
+	width: 25%;
+	float: left;
+	display: inline;
+}
+body aside header {
+	position: relative;
+	height: 50%;
+	text-align: center;
+	top: 1em;
+}
+body aside header div#img img {
+	width: 13em;
+	-webkit-border-radius: 20em;
+	-khtml-border-radius: 20em;  
+	-moz-border-radius: 20em;
+	border-radius: 20em;
+}
+body aside header p {
+	font-family: aclonica, sans-serif;
+	font-size: 2em;
+	color: #F2E394;
+}
+body aside nav {
+	position: relative;
+	height: 37%;
+}
+body aside nav ul {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+body aside nav ul li {
+	position: relative;
+	list-style-type: none;
+	display: block;
+	width: 100% - 0.5em;
+	margin-top: 1em;
+	background-color: #F2AE72;
+	border-left: 0.5em solid #000;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-family: nova-mono, sans-serif;
+	font-size: 1.3em;
+	cursor: pointer;
+	text-shadow: 0.05em 0.05em 0.1em #000;
+	line-height: 3em;
+	color: #F2E394;
+}
+body aside nav ul li:hover {
+	background-color: #000;
+	border-left: 0.5em solid #000;
+	transition: background-color 0.3s linear;
+}
+body aside footer {
+	 position: relative;
+	 text-align: center;
+	 margin: 0;
+	 height: 13% - 1em;
+}
+body aside footer ul {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+body aside footer li {
+	position: relative;
+	list-style-type: none;
+	display: inline;
+	margin-right: 1em;
+}
+body aside footer li a {
+	color: #F2AE72;
+	text-decoration: none;
+}
+body aside footer li a:hover {
+	color: #F2E394;
+	transition: color 0.3s linear;
+}
+body aside footer p {
+	font-family: aclonica, sans-serif;
+	font-size: 1.2em;
+	color: #D96459;
+	display: inline;
+	color: #F2E394;
+	top: 100%;
+}
+body aside footer p span {
+	color: #FF0000;
+}
+body aside footer p span:hover:before {
+	content: "\f21e";
+}
+section#container {
+	position: relative;
+	width: 75%;
+	height: 5em;
+	float: right;
+	display: inline;
+	/*-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;*/
+}
+@media all and (max-height: 700px) {
+	body aside {
+		font-size: 0.8em;
+	}
+}
+@media all and (max-height: 570px) {
+	body aside {
+		font-size: 0.7em;
+	}
+}
+@media all and (max-height: 480px) {
+	body aside {
+		font-size: 0.6em;
+	}
+}
