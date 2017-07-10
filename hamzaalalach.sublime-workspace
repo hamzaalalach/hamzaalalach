@@ -523,8 +523,8 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3010,
-				"line_ending": "Unix"
+				"buffer_size": 3074,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -539,8 +539,8 @@
 			"file": "styles/base.css",
 			"settings":
 			{
-				"buffer_size": 2445,
-				"line_ending": "Unix"
+				"buffer_size": 2479,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -592,12 +592,11 @@
 	},
 	"expanded_folders":
 	[
-		"/opt/lampp/htdocs/hamzaalalach",
-		"/opt/lampp/htdocs/hamzaalalach/scripts",
-		"/opt/lampp/htdocs/hamzaalalach/styles"
+		"/C/xampp/htdocs/hamzaalalach"
 	],
 	"file_history":
 	[
+		"/C/Users/alala/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/opt/lampp/htdocs/hamzaalalach/styles/base.css",
 		"/opt/lampp/htdocs/hamzaalalach/.gitignore",
 		"/home/hamzaalalach/Desktop/wittr/.gitignore",
@@ -724,12 +723,11 @@
 		"/C/Users/medalch/Desktop/Hamza/Project/_css/base.css",
 		"/C/Users/medalch/Desktop/Hamza/Project/index.html",
 		"/C/Users/medalch/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/medalch/Desktop/Hamza/Project/_css/base.html",
-		"/C/Users/medalch/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+		"/C/Users/medalch/Desktop/Hamza/Project/_css/base.html"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -888,15 +886,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3010,
+						"buffer_size": 3074,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2040,
-								2040
+								2178,
+								2178
 							]
 						],
 						"settings":
@@ -906,7 +904,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 338.0,
+						"translation.y": 333.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -947,15 +945,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2445,
+						"buffer_size": 2479,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1983,
-								1983
+								0,
+								0
 							]
 						],
 						"settings":
@@ -975,7 +973,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 42.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -1012,7 +1010,7 @@
 	"project": "hamzaalalach.sublime-project",
 	"replace":
 	{
-		"height": 76.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1090,7 +1088,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 236.0,
+	"side_bar_width": 221.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
