@@ -1,9 +1,24 @@
 var X,
     Y,
-    currentDiv;
-function move(e) {
-	currentDiv.style.left = e.clientX - X + 'px';
-	currentDiv.style.top = e.clientY - Y + 'px';
+    currentDiv,
+    storage = {},
+    zIndexs = [];
+document.addEventListener('mousemove', function(e) {
+	var target = storage.target;
+	if (target) {
+		target.style.top = e.clientY - storage.offsetY + 'px';
+		target.style.left = e.clientX - storage.offsetX + 'px';
+	}
+});
+function max(array) {
+	var m = array[0],
+		arrayL = array.length;
+	for (var i = 0; i < arrayL; i++) {
+		if (m < array[i]) {
+			m = array[i];
+		}
+	}
+	return m
 }
 /* Box model */
 function applySize(s) {
@@ -28,7 +43,7 @@ function addEvents() {
 			e.target.parentNode.parentNode.getElementsByClassName('boxTitle')[0].style.display = 'none';
 			e.target.parentNode.parentNode.getElementsByClassName('bxDetContainer')[0].style.display = 'table-cell';
 		}
-	}, true);
+	});
 	currentDiv.addEventListener('mouseout', function(e) {
 		if (e.target.parentNode.className == 'box') {
 			e.target.parentNode.getElementsByClassName('boxTitle')[0].style.display = 'table-cell';
@@ -37,17 +52,29 @@ function addEvents() {
 			e.target.parentNode.parentNode.getElementsByClassName('boxTitle')[0].style.display = 'table-cell';
 			e.target.parentNode.parentNode.getElementsByClassName('bxDetContainer')[0].style.display = 'none';
 		}
-	}, true);
+	});
 	currentDiv.addEventListener('mousedown', function(e) {
-		X = e.clientX - currentDiv.offsetLeft;
-		Y = e.clientY - currentDiv.offsetTop;
-		currentDiv.addEventListener('mousemove', move, false);
-	}, false);
+		var s = storage;
+		if (e.target.parentNode.className == 'box') {
+			s.target = e.target.parentNode;
+		} else if (e.target.parentNode.parentNode.className == 'box') {
+			s.target = e.target.parentNode.parentNode;
+		} else {
+			s.target = e.target;
+		}
+		s.offsetX = e.clientX - s.target.offsetLeft;
+		s.offsetY = e.clientY - s.target.offsetTop;
+		if (zIndexs.length == 0) {
+			s.target.style.zIndex = getComputedStyle(s.target).zIndex + 1;
+			zIndexs.push(1);
+		} else if (getComputedStyle(s.target).zIndex < max(zIndexs)) {
+			s.target.style.zIndex = max(zIndexs) + 1;
+			zIndexs.push(new Number(getComputedStyle(s.target).zIndex));
+		}
+	});
 	currentDiv.addEventListener('mouseup', function() {
-		currentDiv.removeEventListener('mousemove', move, false);
-		X = 0;
-		Y = 0;
-	}, false);
+		storage = {};
+	});
 }
 function Box(title, date, categ, size) {
 	var colors = ['#00FFFF', '#1560FB', '#000', '#FFB90F', '#00EE00', '#FF6A6A', '#AB82FF', '#FFEC8B', '#FF8247', '#9ACD32'],

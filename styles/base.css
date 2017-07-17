@@ -117,7 +117,8 @@ section#container {
 	user-select: none;
 }
 .box {
-	position: relative;
+	position: absolute;
+	z-index: 0;
 	display: table;
 	padding: 0;
 	color: #FFF;
