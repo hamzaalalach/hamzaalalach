@@ -109,14 +109,45 @@ body aside footer p span:hover:before {
 section#container {
 	position: relative;
 	width: 75%;
-	height: 5em;
 	float: right;
-	display: inline;
-	/*-moz-user-select: none;
+	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
-	user-select: none;*/
+	user-select: none;
+}
+.box {
+	position: relative;
+	display: table;
+	padding: 0;
+	color: #FFF;
+	float: left;
+	font-family: aclonica, sans-serif;
+	font-size: 0.9em;
+	text-shadow: 0 0 1em #333;
+	-webkit-border-radius: 200em;
+	-khtml-border-radius: 200em;  
+	-moz-border-radius: 200em;
+	border-radius: 200em;
+	box-shadow: 0 0 0.5em #333;
+}
+.bxDetContainer {
+	position: relative;
+	display: none;
+    vertical-align: middle;
+	text-align: center;
+	width: 100%;
+}
+.boxTitle {
+	position: relative;
+	display: table-cell;
+    vertical-align: middle;
+	text-align: center;
+}
+.boxDetails {
+    vertical-align: middle;
+	position: relative;
+	text-align: center;
 }
 @media all and (max-height: 700px) {
 	body aside {

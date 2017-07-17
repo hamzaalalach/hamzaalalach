@@ -4,6 +4,86 @@
 		"selected_items":
 		[
 			[
+				"div",
+				"div"
+			],
+			[
+				"ta",
+				"target"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"box",
+				"boxHeader"
+			],
+			[
+				"cls",
+				"clss"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"get",
+				"get	Get Elements"
+			],
+			[
+				"Box",
+				"boxDetails"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"co",
+				"container"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"p",
+				"pTxt"
+			],
+			[
+				"ap",
+				"appendChild"
+			],
+			[
+				"create",
+				"createTextNode"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"app",
+				"applySize"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
 				"mar",
 				"margin-bottom"
 			],
@@ -20,10 +100,6 @@
 				"margin"
 			],
 			[
-				"fon",
-				"font"
-			],
-			[
 				"blod",
 				"bolder"
 			],
@@ -36,20 +112,8 @@
 				"border-left"
 			],
 			[
-				"tex",
-				"text-decoration"
-			],
-			[
-				"in",
-				"inline-block"
-			],
-			[
 				"backgr",
 				"background-repeat"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"fl",
@@ -58,14 +122,6 @@
 			[
 				"dat",
 				"dataTransfer"
-			],
-			[
-				"div",
-				"div4"
-			],
-			[
-				"get",
-				"getData"
 			],
 			[
 				"drag",
@@ -148,10 +204,6 @@
 				"target"
 			],
 			[
-				"add",
-				"addClass"
-			],
-			[
 				"lis",
 				"lis"
 			],
@@ -181,10 +233,6 @@
 			],
 			[
 				"con",
-				"console"
-			],
-			[
-				"co",
 				"console"
 			],
 			[
@@ -428,10 +476,6 @@
 				"position"
 			],
 			[
-				"inner",
-				"innerWidth"
-			],
-			[
 				"rt",
 				"rtFalse"
 			],
@@ -446,10 +490,6 @@
 			[
 				"tetx",
 				"text-decoration"
-			],
-			[
-				"di",
-				"display"
 			],
 			[
 				"al",
@@ -474,46 +514,6 @@
 			[
 				"inline",
 				"inline-block"
-			],
-			[
-				"l",
-				"lastLeft"
-			],
-			[
-				"p",
-				"px"
-			],
-			[
-				"soci",
-				"socialLinks"
-			],
-			[
-				"so",
-				"socialLinks"
-			],
-			[
-				"image",
-				"imageSrc"
-			],
-			[
-				"a",
-				"article"
-			],
-			[
-				"page",
-				"pageXOffset"
-			],
-			[
-				"my",
-				"myOverlay"
-			],
-			[
-				"the",
-				"theImage"
-			],
-			[
-				"border",
-				"border"
 			]
 		]
 	},
@@ -523,7 +523,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3074,
+				"buffer_size": 3080,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/base.css",
+			"settings":
+			{
+				"buffer_size": 2999,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,16 +539,8 @@
 			"file": "scripts/base.js",
 			"settings":
 			{
-				"buffer_size": 582,
+				"buffer_size": 3478,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "styles/base.css",
-			"settings":
-			{
-				"buffer_size": 2479,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -551,10 +551,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "",
+		"height": 400.0,
+		"last_filter": "Snippet:",
 		"selected_items":
 		[
+			[
+				"Snippet:",
+				"Snippet: Object Value JS"
+			],
 			[
 				"aja",
 				"Set Syntax: JavaScript"
@@ -572,7 +576,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 392.0
+		"width": 424.0
 	},
 	"console":
 	{
@@ -592,11 +596,18 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/hamzaalalach"
+		"/C/xampp/htdocs/hamzaalalach",
+		"/C/xampp/htdocs/hamzaalalach/scripts"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/hamzaalalach/scripts/anime.min.js",
+		"/C/xampp/htdocs/hamzaalalach/scripts/move.min.js",
+		"/C/Users/alala/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/alala/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/hamzaalalach/styles/base.css",
+		"/C/xampp/htdocs/hamzaalalach/index.html",
+		"/C/xampp/htdocs/hamzaalalach/scripts/base.js",
 		"/opt/lampp/htdocs/hamzaalalach/styles/base.css",
 		"/opt/lampp/htdocs/hamzaalalach/.gitignore",
 		"/home/hamzaalalach/Desktop/wittr/.gitignore",
@@ -717,13 +728,7 @@
 		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_02/working folder/dom/index.html",
 		"/C/Users/medalch/Downloads/Compressed/Contacts/Contacts/login.php",
 		"/C/xampp/htdocs/Project/Project.sublime-workspace",
-		"/C/Users/medalch/Desktop/Hamza/Project/_css/css.css",
-		"/C/Users/medalch/Desktop/Hamza/Project/html.htm",
-		"/C/Users/medalch/Desktop/Hamza/Project/Project.sublime-project",
-		"/C/Users/medalch/Desktop/Hamza/Project/_css/base.css",
-		"/C/Users/medalch/Desktop/Hamza/Project/index.html",
-		"/C/Users/medalch/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/medalch/Desktop/Hamza/Project/_css/base.html"
+		"/C/Users/medalch/Desktop/Hamza/Project/_css/css.css"
 	],
 	"find":
 	{
@@ -741,6 +746,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"parentNode",
+			"false",
+			"current",
+			"target",
+			"currentTarget",
+			"target",
+			"false",
+			"div",
+			"p",
+			"div",
+			"spinner",
+			"parent",
+			"divWidth",
+			"20em",
+			"update",
+			"font-fa",
+			"50em",
+			"20em",
+			"a",
+			"li",
+			"div",
+			"relative",
+			"footer",
 			"</a>",
 			"50em",
 			"projec",
@@ -845,21 +873,7 @@
 			"five",
 			"emailContact",
 			"{\n",
-			"arrow",
-			";\n",
-			"15em",
-			";\n",
-			"header",
-			"#nav",
-			"nav",
-			"650",
-			"40",
-			";\n",
-			"5px",
-			");\n",
-			"tab",
-			"	<!--[",
-			"tab size"
+			"arrow"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -877,7 +891,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -886,74 +900,44 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3074,
+						"buffer_size": 3080,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2178,
-								2178
+								3023,
+								3023
 							]
 						],
 						"settings":
 						{
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 333.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "scripts/base.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 582,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								82
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "styles/base.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2479,
+						"buffer_size": 2999,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2449,
+								2449
 							]
 						],
 						"settings":
@@ -962,10 +946,40 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scripts/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"spell_check": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
