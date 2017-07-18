@@ -10,7 +10,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-color: #FFF;
+	background-color: #060B14;
 }
 body aside {
 	display: relative;
@@ -130,7 +130,8 @@ section#container {
 	-khtml-border-radius: 200em;  
 	-moz-border-radius: 200em;
 	border-radius: 200em;
-	box-shadow: 0 0 0.5em #333;
+	box-shadow: 0 0 0.5em #FFF;
+	cursor: pointer;
 }
 .bxDetContainer {
 	position: relative;

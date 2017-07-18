@@ -20,7 +20,6 @@ function max(array) {
 	}
 	return m
 }
-/* Box model */
 function applySize(s) {
 	if (s == 's') {
 		currentDiv.style.width = '10%';
@@ -33,6 +32,13 @@ function applySize(s) {
 	} else if (s == 'l') {
 		currentDiv.style.width = '20%';
 	}
+}
+function calcHeightInpx(num) {
+	return (window.innerWidth - window.innerWidth*25/100)*num/100 + 'px';
+}
+function randomPos() {
+	currentDiv.style.left = Math.floor(Math.random()*80) + '%';
+	currentDiv.style.top = calcHeightInpx(Math.floor(Math.random()*40));
 }
 function addEvents() {
 	currentDiv.addEventListener('mouseover', function(e) {
@@ -109,11 +115,11 @@ function Box(title, date, categ, size) {
 	if (fullWidth[fullWidth.length] == '%') {
 		div.style.height = fullWidth; 
 	} else {
-		divWidth = new Number(fullWidth[0] + fullWidth[1])
-		div.style.height = (window.innerWidth - window.innerWidth*25/100)*divWidth/100 + 'px';
+		div.style.height = calcHeightInpx(new Number(fullWidth[0] + fullWidth[1]));
 	}
 	div.style.backgroundColor = colors[Math.floor(Math.random()*10)];
 	addEvents();
 	document.getElementById('container').appendChild(div);
+	randomPos();
 	return div;
 }
