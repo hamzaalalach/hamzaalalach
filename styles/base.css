@@ -119,6 +119,7 @@ section#container {
 }
 section#container div#popUpContainer {
 	position: absolute;
+	display: none;
 	width: 350px;
 	height: 450px;
 	background-color: #333;
@@ -172,11 +173,10 @@ section#container div#popUpContainer ul#aside li {
 	list-style-type: none;
 	text-align: right;
 	background-color: #222;
-	padding: 0.05em 1em;
+	padding: 0 1em;
 	margin-top: 0.3em;
 	border-left: 0.2em solid #FFF; 
 	border-top-left-radius: 3em;
-	right: -1em;
 }
 section#container div#popUpContainer article#mainContent {
 	padding: 0.7em;
