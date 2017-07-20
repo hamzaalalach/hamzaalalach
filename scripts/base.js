@@ -1,6 +1,7 @@
 var X,
     Y,
     currentDiv,
+    currentBox,
     storage = {},
     zIndexs = [],
     moved = false,
@@ -87,11 +88,19 @@ function addHCEvents() {
 				pu.style.zIndex = max(zIndexs) + 1 + '';
 				zIndexs.push(max(zIndexs) + 1);
 				addpuMoveEvents(pu);
-				loadpuData(boxFinder(e));
+				currentBox = boxFinder(e);
+				currentBox.style.display = 'none';
+				loadpuData(currentBox);
 				document.getElementById('close').addEventListener('click', function() {
 					pu.style.display = 'none';
+					currentBox.style.display = 'table';
 					up = false;
 				});
+			} else {
+				currentBox.style.display = 'table';
+				currentBox = boxFinder(e);
+				currentBox.style.display = 'none';
+				loadpuData(currentBox);
 			}
 		}
 	});
@@ -185,4 +194,34 @@ function Box(title, date, categ, size) {
 window.addEventListener('load', function() {
 	document.getElementsByClassName('horizontal')[0].style.display = 'none';
 });
-Box('Music I love', '2017/07/14', 'About me', 'l');
+(function() {
+	var navBtns = [
+		document.getElementById('navAll'),
+		document.getElementById('navAboutMe'),
+		document.getElementById('navPortfolio'),
+		document.getElementById('navBlog'),
+		],
+		navBtnsL = navBtns.length;
+	for (var i = 0; i < navBtnsL; i++) {
+		navBtns[i].addEventListener('click', function(e) {
+			document.getElementsByClassName('active')[0].className = '';
+			e.target.className = 'active';
+			var newCateg = e.target.innerHTML.toLowerCase(),
+				boxes = document.getElementsByClassName('box'),
+				boxesL = boxes.length;
+			if (newCateg == 'display all') {
+				for (var i = 0; i < boxesL; i++) {
+					boxes[i].style.display = 'table';
+				}
+			} else {
+				for (var i = 0; i < boxesL; i++) {
+					if (boxes[i].getAttribute('data-category').toLowerCase() != newCateg) {
+						boxes[i].style.display = 'none';
+					} else {
+						boxes[i].style.display = 'table';
+					}
+				}
+			}
+		});
+	}
+})();

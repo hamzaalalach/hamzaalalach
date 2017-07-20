@@ -219,6 +219,9 @@ section#container div#popUpContainer article#mainContent {
 	position: relative;
 	text-align: center;
 }
+.active {
+	background-color: #00FFF6;
+}
 @media all and (max-height: 700px) {
 	body aside {
 		font-size: 0.8em;

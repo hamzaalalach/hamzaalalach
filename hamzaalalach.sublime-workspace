@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"cure",
+				"currentBox"
+			],
+			[
+				"curre",
+				"currentBox"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"box",
+				"boxFinder"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"boxes",
+				"boxes"
+			],
+			[
+				"new",
+				"newCateg"
+			],
+			[
+				"nav",
+				"navBtns"
+			],
+			[
+				"navBtn",
+				"navBtnsL"
+			],
+			[
+				"cate",
+				"Category"
+			],
+			[
+				"get",
+				"getElementsByClassName"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"loa",
+				"loadpuData"
+			],
+			[
 				"add",
 				"addpuMoveEvents"
 			],
@@ -12,16 +64,8 @@
 				"visibility"
 			],
 			[
-				"get",
-				"getElementById"
-			],
-			[
 				"pu",
 				"puHeight"
-			],
-			[
-				"inner",
-				"innerWidth"
 			],
 			[
 				"mou",
@@ -102,10 +146,6 @@
 			[
 				"tab",
 				"table-cell"
-			],
-			[
-				"box",
-				"boxHeader"
 			],
 			[
 				"cls",
@@ -292,10 +332,6 @@
 				"option	Tag"
 			],
 			[
-				"nav",
-				"navHome"
-			],
-			[
 				"twe",
 				"tweeterLinks"
 			],
@@ -464,10 +500,6 @@
 				"process"
 			],
 			[
-				"d",
-				"document"
-			],
-			[
 				"docue",
 				"document"
 			],
@@ -482,38 +514,6 @@
 			[
 				"r",
 				"transparent"
-			],
-			[
-				"fo",
-				"font-size"
-			],
-			[
-				"inpu",
-				"inputs"
-			],
-			[
-				"qu",
-				"querySelectorAll"
-			],
-			[
-				"docme",
-				"document"
-			],
-			[
-				"inli",
-				"inline"
-			],
-			[
-				"margin-",
-				"margin-right"
-			],
-			[
-				"font-s",
-				"font-size"
-			],
-			[
-				"pis",
-				"position"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4985,
+				"buffer_size": 4915,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "scripts/base.js",
 			"settings":
 			{
-				"buffer_size": 6252,
+				"buffer_size": 7980,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "styles/base.css",
 			"settings":
 			{
-				"buffer_size": 4642,
+				"buffer_size": 4663,
 				"line_ending": "Windows"
 			}
 		}
@@ -748,6 +748,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"href",
 			"currentDiv",
 			"elem",
 			"width",
@@ -874,8 +875,7 @@
 			"210",
 			"180",
 			"220",
-			"190",
-			"160"
+			"190"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -902,15 +902,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4985,
+						"buffer_size": 4915,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4320,
-								4320
+								2762,
+								2762
+							],
+							[
+								2803,
+								2803
+							],
+							[
+								2843,
+								2843
+							],
+							[
+								2879,
+								2879
 							]
 						],
 						"settings":
@@ -919,10 +931,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1035.0,
+						"translation.y": 810.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -931,15 +943,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6252,
+						"buffer_size": 7980,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3898,
-								3898
+								7980,
+								7980
 							]
 						],
 						"settings":
@@ -949,7 +961,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.y": 3240.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -961,15 +973,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4642,
+						"buffer_size": 4663,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2267,
-								2267
+								4433,
+								4433
 							]
 						],
 						"settings":
@@ -978,10 +990,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1506.0,
+						"translation.y": 2575.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
