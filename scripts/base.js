@@ -40,7 +40,7 @@ function randomPos() {
 	currentDiv.style.left = Math.floor(Math.random()*80) + '%';
 	currentDiv.style.top = calcHeightInpx(Math.floor(Math.random()*40));
 }
-function addEvents() {
+function addHCEvents() {
 	currentDiv.addEventListener('mouseover', function(e) {
 		if (e.target.parentNode.className == 'box') {
 			e.target.parentNode.getElementsByClassName('boxTitle')[0].style.display = 'none';
@@ -59,7 +59,9 @@ function addEvents() {
 			e.target.parentNode.parentNode.getElementsByClassName('bxDetContainer')[0].style.display = 'none';
 		}
 	});
-	currentDiv.addEventListener('mousedown', function(e) {
+}
+function addMoveEvents(elem) {
+	elem.addEventListener('mousedown', function(e) {
 		var s = storage;
 		if (e.target.parentNode.className == 'box') {
 			s.target = e.target.parentNode;
@@ -78,7 +80,7 @@ function addEvents() {
 			zIndexs.push(new Number(getComputedStyle(s.target).zIndex));
 		}
 	});
-	currentDiv.addEventListener('mouseup', function() {
+	elem.addEventListener('mouseup', function() {
 		storage = {};
 	});
 }
@@ -118,8 +120,12 @@ function Box(title, date, categ, size) {
 		div.style.height = calcHeightInpx(new Number(fullWidth[0] + fullWidth[1]));
 	}
 	div.style.backgroundColor = colors[Math.floor(Math.random()*10)];
-	addEvents();
+	addHCEvents();
+	addMoveEvents(currentDiv);
 	document.getElementById('container').appendChild(div);
 	randomPos();
 	return div;
 }
+window.addEventListener('load', function() {
+	document.getElementsByClassName('horizontal')[0].style.display = 'none';
+});

@@ -4,12 +4,60 @@
 		"selected_items":
 		[
 			[
-				"ra",
-				"randomPos"
+				"add",
+				"addEventListener"
 			],
 			[
 				"get",
-				"getElementById"
+				"getElementsByClassName"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"bord",
+				"border-left"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"ra",
+				"randomPos"
 			],
 			[
 				"arr",
@@ -30,10 +78,6 @@
 			[
 				"ta",
 				"target"
-			],
-			[
-				"di",
-				"display"
 			],
 			[
 				"tex",
@@ -60,20 +104,8 @@
 				"boxDetails"
 			],
 			[
-				"add",
-				"addEventListener"
-			],
-			[
 				"co",
 				"container"
-			],
-			[
-				"fon",
-				"font-style"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"p",
@@ -100,10 +132,6 @@
 				"box-shadow"
 			],
 			[
-				"mar",
-				"margin-bottom"
-			],
-			[
 				"max",
 				"max-height"
 			],
@@ -122,14 +150,6 @@
 			[
 				"u",
 				"uppercase"
-			],
-			[
-				"bor",
-				"border-left"
-			],
-			[
-				"backgr",
-				"background-repeat"
 			],
 			[
 				"fl",
@@ -172,16 +192,8 @@
 				"background-color"
 			],
 			[
-				"tra",
-				"translateX()"
-			],
-			[
 				"le",
 				"letter-spacing"
-			],
-			[
-				"margin",
-				"margin"
 			],
 			[
 				"s",
@@ -502,18 +514,6 @@
 			[
 				"fun",
 				"function"
-			],
-			[
-				"tetx",
-				"text-decoration"
-			],
-			[
-				"al",
-				"alt	Attr"
-			],
-			[
-				"wid",
-				"width"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3080,
+				"buffer_size": 4985,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "scripts/base.js",
 			"settings":
 			{
-				"buffer_size": 4387,
+				"buffer_size": 4563,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "styles/base.css",
 			"settings":
 			{
-				"buffer_size": 3033,
+				"buffer_size": 4639,
 				"line_ending": "Windows"
 			}
 		}
@@ -597,11 +597,14 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/hamzaalalach",
+		"/C/xampp/htdocs/hamzaalalach/images",
 		"/C/xampp/htdocs/hamzaalalach/scripts",
 		"/C/xampp/htdocs/hamzaalalach/styles"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/hamzaalalach/styles/simplebar.css",
+		"/C/xampp/htdocs/hamzaalalach/scripts/simplebar.js",
 		"/C/xampp/htdocs/hamzaalalach/styles/base.css",
 		"/C/xampp/htdocs/hamzaalalach/scripts/anime.min.js",
 		"/C/xampp/htdocs/hamzaalalach/scripts/move.min.js",
@@ -727,9 +730,7 @@
 		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_02/working folder/dom/_/js/myscript.js",
 		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_05/finished/dom/_/js/myscript.js",
 		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_02/working folder/dom/index.html",
-		"/C/Users/medalch/Downloads/Compressed/Contacts/Contacts/login.php",
-		"/C/xampp/htdocs/Project/Project.sublime-workspace",
-		"/C/Users/medalch/Desktop/Hamza/Project/_css/css.css"
+		"/C/Users/medalch/Downloads/Compressed/Contacts/Contacts/login.php"
 	],
 	"find":
 	{
@@ -747,6 +748,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"currentDiv",
+			"#popUpContainer",
+			"ex3",
+			"trans",
+			"transi",
+			"button",
 			"div",
 			"append",
 			"parentNode",
@@ -868,13 +875,7 @@
 			"130",
 			"160",
 			"130",
-			"header",
-			"vhost",
-			"FF6666",
-			"30px",
-			"5px",
-			"five",
-			"emailContact"
+			"header"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -892,7 +893,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -901,15 +902,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3080,
+						"buffer_size": 4985,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3023,
-								3023
+								4320,
+								4320
 							]
 						],
 						"settings":
@@ -918,10 +919,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 1035.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -930,15 +931,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4387,
+						"buffer_size": 4563,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4140,
-								4140
+								4563,
+								4563
 							]
 						],
 						"settings":
@@ -948,10 +949,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1665.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -960,15 +961,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3033,
+						"buffer_size": 4639,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2373,
+								2373
 							]
 						],
 						"settings":
@@ -977,10 +978,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1215.0,
+						"translation.y": 1620.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

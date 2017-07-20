@@ -81,6 +81,7 @@ body aside nav ul li {
 	text-shadow: 0.05em 0.05em 0.1em #000;
 	line-height: 3em;
 	color: #FFF;
+	transition: background-color 0.3s linear;
 }
 body aside nav ul li:hover {
 	background-color: #1560FB;
@@ -115,6 +116,73 @@ section#container {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+section#container div#popUpContainer {
+	position: absolute;
+	width: 350px;
+	height: 450px;
+	background-color: #333;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0 0 1em #000;
+}
+section#container div#popUpContainer div#header {
+	position: relative;
+	display: table;
+	top: 0;
+	width: 100%;
+	height: 2em;
+	background-color: #222;
+	box-shadow: 0 0 0.5em #000;
+}
+section#container div#popUpContainer div#header p {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 1em;
+	font-family: nova-mono, sans-serif;
+	font-weight: bolder;
+	color: #1560FB;
+}
+section#container div#popUpContainer div#header span {
+	float: right;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 2em;
+	background-color: #060B14;
+	color: #FFF;
+	font-weight: bolder;
+	text-align: center;
+	width: 1em;
+	cursor: pointer;
+	transition: background-color, color 1s ease;
+}
+section#container div#popUpContainer div#header span:hover {
+	color: #060B14;
+	background-color: #333;
+	transition: background-color, color 1s ease;
+}
+section#container div#popUpContainer ul#aside {
+	float: right;
+	font-family: merienda-one, cursive;
+	font-size: 0.7em;
+}
+section#container div#popUpContainer ul#aside li {
+	position: relative;
+	list-style-type: none;
+	text-align: right;
+	background-color: #222;
+	padding: 0.05em 1em;
+	margin-top: 0.3em;
+	border-left: 0.2em solid #FFF; 
+	border-top-left-radius: 3em;
+	right: -1em;
+}
+section#container div#popUpContainer article#mainContent {
+	padding: 0.7em;
+	text-align: justify;
+	font-family: merienda-one, cursive;
+	font-size: 0.8em;
 }
 .box {
 	position: absolute;
