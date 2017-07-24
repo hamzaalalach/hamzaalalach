@@ -12,7 +12,7 @@ body {
 	height: 100%;
 	background-color: #060B14;
 }
-body aside {
+aside {
 	display: relative;
 	height: 100%;
 	background-color: #1560FB;
@@ -20,13 +20,13 @@ body aside {
 	float: left;
 	display: inline;
 }
-body aside header {
+aside header {
 	position: relative;
 	height: 50%;
 	text-align: center;
 	top: 1em;
 }
-body aside header div#img img {
+aside header div#img img {
 	width: 13em;
 	-webkit-border-radius: 20em;
 	-khtml-border-radius: 20em;  
@@ -34,38 +34,39 @@ body aside header div#img img {
 	border-radius: 20em;
 	box-shadow: 0 0 1.5em #333;
 }
-body aside header ul {
+aside header ul {
 	position: relative;
 	padding: 0;
 	margin: 0;
 }
-body aside header li {
+aside header li {
 	line-height: 7em;
 	position: relative;
 	list-style-type: none;
 	display: inline;
 	margin-right: 1em;
+	right: -1em;
 }
-body aside header li a {
+aside header li a {
 	color: #FFF;
 	text-decoration: none;
 }
-body aside header li a:hover {
+aside header li a:hover {
 	color: #F2E394;
 	transition: color 0.3s linear;
 }
-body aside nav {
+aside nav {
 	position: relative;
 	height: 43%;
 }
-body aside nav ul {
+aside nav ul {
 	position: relative;
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	text-align: center;
 }
-body aside nav ul li {
+aside nav ul li {
 	position: relative;
 	list-style-type: none;
 	display: block;
@@ -83,28 +84,31 @@ body aside nav ul li {
 	color: #FFF;
 	transition: background-color 0.3s linear;
 }
-body aside nav ul li:hover {
+aside nav ul li:hover {
 	background-color: #1560FB;
 	border-left: 0.5em solid #1560FB;
 	transition: background-color 0.3s linear;
 }
-body aside footer {
+aside footer {
 	 position: relative;
 	 text-align: center;
 	 margin: 0;
 	 height: 7% - 1em;
 }
-body aside footer p {
+aside footer a#arrow {
+	display: none;
+}
+aside footer p {
 	font-family: aclonica, sans-serif;
 	font-size: 1.2em;
 	color: #FFF;
 	display: inline;
 	top: 100%;
 }
-body aside footer p span {
+aside footer p span {
 	color: #FF0000;
 }
-body aside footer p span:hover:before {
+aside footer p span:hover:before {
 	content: "\f21e";
 }
 section#container {
@@ -223,17 +227,114 @@ section#container div#popUpContainer article#mainContent {
 	background-color: #00FFF6;
 }
 @media all and (max-height: 700px) {
-	body aside {
+	aside {
 		font-size: 0.8em;
 	}
 }
 @media all and (max-height: 570px) {
-	body aside {
+	aside {
 		font-size: 0.7em;
 	}
 }
 @media all and (max-height: 480px) {
-	body aside {
+	aside {
 		font-size: 0.6em;
+	}
+}
+@media all and (max-width: 1200px) {
+	aside {
+		font-size: 0.7em;
+	}
+	aside footer p {
+		font-size: 0.9em;
+	}
+	.box {
+		font-size: 0.7em;
+	}
+}
+@media all and (max-width: 900px) {
+	aside {
+		font-size: 0.6em;
+	}
+	aside footer p {
+		font-size: 0.8em;
+	}
+	.box {
+		font-size: 0.5em;
+	}
+}
+@media all and (max-width: 700px) {
+	aside {
+		width: 100%;
+		font-size: 1em;
+		box-shadow: 0 0 2em #666;
+	}
+	aside header {
+		height: 80%;
+		text-shadow: 0 0 1em #FFF;
+	}
+	aside nav {
+		display: none;
+	}
+	aside footer {
+		height: 20%;
+	}
+	aside footer a#arrow {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		width: 2em;
+		color: #FFF;
+		margin: auto;
+		font-size: 2em;
+		margin-bottom: 1em;
+		animation: arrow 1.5s ease alternate infinite;
+		-webkit-animation: arrow 1.5s ease alternate infinite;
+	}
+	aside footer p {
+		font-size: 1em;
+	}
+	section#container {
+		width: 100%;
+	}
+	.box {
+		position: relative;
+		width: 100%;
+		border-radius: 0;
+		clear: both;
+		height: 12em;
+		top: 1em;
+	}
+	.boxTitle {
+		position: relative;
+		float: left;
+		width: 60%;
+	}
+	.bxDetContainer {
+		display: inline;
+		float: right;
+		width: 40%;
+	}
+}
+@keyframes arrow {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(20px);
+	}
+}
+@-webkit-keyframes arrow {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(20px);
 	}
 }

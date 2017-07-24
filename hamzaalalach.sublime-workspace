@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"h1",
+				"h1Height"
+			],
+			[
+				"divH",
+				"divHeight"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"dvi",
+				"divWidth"
+			],
+			[
+				"div",
+				"divWidth"
+			],
+			[
+				"inner",
+				"innerWidth"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"text",
+				"text-shadow"
+			],
+			[
+				"tra",
+				"translateY()"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
 				"cure",
 				"currentBox"
 			],
@@ -44,20 +96,8 @@
 				"Category"
 			],
 			[
-				"get",
-				"getElementsByClassName"
-			],
-			[
-				"inner",
-				"innerHTML"
-			],
-			[
 				"loa",
 				"loadpuData"
-			],
-			[
-				"add",
-				"addpuMoveEvents"
 			],
 			[
 				"vi",
@@ -86,14 +126,6 @@
 			[
 				"margin",
 				"margin-top"
-			],
-			[
-				"text",
-				"text-align"
-			],
-			[
-				"tra",
-				"transition"
 			],
 			[
 				"fon",
@@ -132,20 +164,12 @@
 				"zIndexs"
 			],
 			[
-				"div",
-				"div"
-			],
-			[
 				"ta",
 				"target"
 			],
 			[
 				"tex",
 				"text-align"
-			],
-			[
-				"tab",
-				"table-cell"
 			],
 			[
 				"cls",
@@ -182,10 +206,6 @@
 			[
 				"box-",
 				"box-shadow"
-			],
-			[
-				"max",
-				"max-height"
 			],
 			[
 				"rou",
@@ -258,10 +278,6 @@
 			[
 				"backgrouo",
 				"background-color"
-			],
-			[
-				"margi",
-				"margin-left"
 			],
 			[
 				"marg",
@@ -498,22 +514,6 @@
 			[
 				"pro",
 				"process"
-			],
-			[
-				"docue",
-				"document"
-			],
-			[
-				"sec",
-				"section"
-			],
-			[
-				"header",
-				"headerScroll"
-			],
-			[
-				"r",
-				"transparent"
 			]
 		]
 	},
@@ -523,7 +523,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4915,
+				"buffer_size": 5160,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/base.css",
+			"settings":
+			{
+				"buffer_size": 6058,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,16 +539,8 @@
 			"file": "scripts/base.js",
 			"settings":
 			{
-				"buffer_size": 7980,
+				"buffer_size": 9233,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "styles/base.css",
-			"settings":
-			{
-				"buffer_size": 4663,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -603,6 +603,11 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/hamzaalalach/scripts/smooth-scroll.min.js",
+		"/C/xampp/htdocs/hamzaalalach/scripts/animatescroll.min.js",
+		"/C/Users/alala/Desktop/index.html",
+		"/C/Users/alala/Desktop/iscroll-master/demos/scroll-to-element/index.html",
+		"/C/xampp/htdocs/hamzaalalach/scripts/respond.min.js",
 		"/C/xampp/htdocs/hamzaalalach/styles/simplebar.css",
 		"/C/xampp/htdocs/hamzaalalach/scripts/simplebar.js",
 		"/C/xampp/htdocs/hamzaalalach/styles/base.css",
@@ -725,12 +730,7 @@
 		"/C/Users/medalch/Desktop/Hamza/Lynda.com - Javascript and AJAX/Ex_Files_JScript_AJAX/Ex_Files_JScript_AJAX/Exercise Files/01-02/workingfolder/ajax/data.json",
 		"/C/Users/medalch/Desktop/Hamza/Lynda.com - Javascript and AJAX/Ex_Files_JScript_AJAX/Ex_Files_JScript_AJAX/Exercise Files/01-02/workingfolder/ajax/index.html",
 		"/C/Users/medalch/Desktop/Hamza/Lynda.com - Javascript and AJAX/Ex_Files_JScript_AJAX/Ex_Files_JScript_AJAX/Exercise Files/01-02/workingfolder/ajax/js.js",
-		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_09/finished/dom/_/js/myscript.js",
-		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_06/finished/dom/_/js/myscript.js",
-		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_02/working folder/dom/_/js/myscript.js",
-		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_05/finished/dom/_/js/myscript.js",
-		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_02/working folder/dom/index.html",
-		"/C/Users/medalch/Downloads/Compressed/Contacts/Contacts/login.php"
+		"/C/Users/medalch/Desktop/Hamza/Lynda - javascript_ Enhancing the DOM/Exercise Files/05_09/finished/dom/_/js/myscript.js"
 	],
 	"find":
 	{
@@ -748,6 +748,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h1",
+			"div",
+			"divWidth",
+			"Width",
+			"width",
+			"Width",
+			"width",
+			"100px",
+			"50px",
+			"arrow",
+			"goDown",
+			"body ",
 			"href",
 			"currentDiv",
 			"elem",
@@ -863,19 +875,7 @@
 			"= '8';",
 			"8",
 			"87",
-			"Verdana",
-			"300",
-			"250",
-			"220",
-			"190",
-			");",
-			"280",
-			"270",
-			"240",
-			"210",
-			"180",
-			"220",
-			"190"
+			"Verdana"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -893,7 +893,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -902,27 +902,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4915,
+						"buffer_size": 5160,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2762,
-								2762
-							],
-							[
-								2803,
-								2803
-							],
-							[
-								2843,
-								2843
-							],
-							[
-								2879,
-								2879
+								5006,
+								5006
 							]
 						],
 						"settings":
@@ -931,27 +919,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 810.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "scripts/base.js",
+					"file": "styles/base.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7980,
+						"buffer_size": 6058,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7980,
-								7980
+								6058,
+								6058
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3909.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scripts/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7571,
+								7571
 							]
 						],
 						"settings":
@@ -961,36 +978,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3240.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "styles/base.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4663,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4433,
-								4433
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2575.0,
+						"translation.y": 2835.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,

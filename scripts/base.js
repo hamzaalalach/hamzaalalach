@@ -24,6 +24,11 @@ function max(array) {
 	}
 	return m
 }
+function vCenter(elem, parent) {
+	var parentHeight = getComputedStyle(parent).height,
+			elemHeight = getComputedStyle(elem).height;
+	elem.style.top = (parentHeight.substr(0, parentHeight.length - 2) - elemHeight.substr(0, elemHeight.length - 2))/2 + 'px';
+}
 function boxFinder(e) {
 	if (e.target.parentNode.className == 'box') {
 		return e.target.parentNode;
@@ -177,22 +182,37 @@ function Box(title, date, categ, size) {
 	div.appendChild(div0);
 	div.setAttribute('data-category', categ);
 	currentDiv = div;
-	applySize(size);
-	fullWidth = getComputedStyle(div).width;
-	if (fullWidth[fullWidth.length] == '%') {
-		div.style.height = fullWidth; 
-	} else {
-		div.style.height = calcHeightInpx(new Number(fullWidth[0] + fullWidth[1]));
-	}
 	div.style.backgroundColor = colors[Math.floor(Math.random()*10)];
-	addHCEvents();
-	addBoxesMoveEvents();
+	if (window.innerWidth > 700) {
+		applySize(size);
+		fullWidth = getComputedStyle(div).width;
+		if (fullWidth[fullWidth.length] == '%') {
+			div.style.height = fullWidth; 
+		} else {
+			div.style.height = calcHeightInpx(new Number(fullWidth[0] + fullWidth[1]));
+		}
+	}
 	document.getElementById('container').appendChild(div);
-	randomPos();
+	if (window.innerWidth > 700) {
+		addHCEvents();
+		addBoxesMoveEvents();
+		randomPos();
+	}
+	if (window.innerWidth <= 700) {
+		vCenter(h1, div);
+		vCenter(div0, div);
+	}
 	return div;
 }
 window.addEventListener('load', function() {
 	document.getElementsByClassName('horizontal')[0].style.display = 'none';
+	document.getElementById('arrow').addEventListener('click', function(e) {
+		e.preventDefault();
+		$('#container').animatescroll({
+ 		 'scrollSpeed': 2000,
+ 		 'easing' :'easeOutBounce'
+		});
+	});
 });
 (function() {
 	var navBtns = [
@@ -225,3 +245,15 @@ window.addEventListener('load', function() {
 		});
 	}
 })();
+Box('Music I love', '2017/07/14', 'about me', 'l');
+Box('Upload files using nodeJS', '2017/07/14', 'blog', 'l')
+Box('Todo app', '2017/07/14', 'portfolio', 'l')
+Box('Music I love', '2017/07/14', 'about me', 'l');
+Box('Upload files using nodeJS', '2017/07/14', 'blog', 'l')
+Box('Todo app', '2017/07/14', 'portfolio', 'l')
+Box('Music I love', '2017/07/14', 'about me', 'l');
+Box('Upload files using nodeJS', '2017/07/14', 'blog', 'l')
+Box('Todo app', '2017/07/14', 'portfolio', 'l')
+Box('Music I love', '2017/07/14', 'about me', 'l');
+Box('Upload files using nodeJS', '2017/07/14', 'blog', 'l')
+Box('Todo app', '2017/07/14', 'portfolio', 'l')
