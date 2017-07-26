@@ -61,7 +61,7 @@ function loadpuData(box) {
 	document.getElementById('puCategory').innerHTML = box.getElementsByClassName('boxCategory')[0].innerHTML;
 	document.getElementById('puDate').innerHTML = box.getElementsByClassName('boxDate')[0].innerHTML;
 }
-function addHCEvents() {
+function addBoxesHoverEvent() {
 	currentDiv.addEventListener('mouseover', function(e) {
 		if (e.target.parentNode.className == 'box') {
 			e.target.parentNode.getElementsByClassName('boxTitle')[0].style.display = 'none';
@@ -80,6 +80,8 @@ function addHCEvents() {
 			e.target.parentNode.parentNode.getElementsByClassName('bxDetContainer')[0].style.display = 'none';
 		}
 	});
+}
+function addBoxesClickEvent() {
 	currentDiv.addEventListener('click', function(e) {
 		if (!moved) {
 			if (!up) {
@@ -92,7 +94,7 @@ function addHCEvents() {
 				pu.style.top = (window.innerHeight - puHeight)/2 + 'px';
 				pu.style.zIndex = max(zIndexs) + 1 + '';
 				zIndexs.push(max(zIndexs) + 1);
-				addpuMoveEvents(pu);
+				addpuMoveEvent(pu);
 				currentBox = boxFinder(e);
 				currentBox.style.display = 'none';
 				loadpuData(currentBox);
@@ -110,7 +112,26 @@ function addHCEvents() {
 		}
 	});
 }
-function addpuMoveEvents(pu) {
+function addBoxesPhoneCE() {
+	currentDiv.addEventListener('click', function(e) {
+		up = true;
+		var pu = document.getElementById('popUpContainer');
+		pu.style.display = 'flex';
+		pu.style.position = 'fixed';
+		pu.style.width = window.innerWidth + 'px';
+		pu.style.height = window.innerHeight + 'px';
+		pu.style.top = '0px';
+		pu.style.zIndex = '2';
+		currentBox = boxFinder(e);
+		loadpuData(currentBox);
+		document.getElementById('close').addEventListener('click', function() {
+			pu.style.display = 'none';
+			document.getElementsByTagName('body')[0].className = '';
+		});
+		document.getElementsByTagName('body')[0].className = 'noscroll';
+	});
+}
+function addpuMoveEvent(pu) {
 	pu.addEventListener('mousedown', function(e) {
 		var s = storage;
 		if (e.target.parentNode.parentNode.parentNode.id == 'popUpContainer') {
@@ -134,7 +155,7 @@ function addpuMoveEvents(pu) {
 		storage = {};
 	});
 }
-function addBoxesMoveEvents() {
+function addBoxesMoveEvent() {
 	currentDiv.addEventListener('mousedown', function(e) {
 		var s = storage;
 		moved = false;
@@ -194,13 +215,14 @@ function Box(title, date, categ, size) {
 	}
 	document.getElementById('container').appendChild(div);
 	if (window.innerWidth > 700) {
-		addHCEvents();
-		addBoxesMoveEvents();
+		addBoxesClickEvent();
+		addBoxesMoveEvent();
 		randomPos();
 	}
 	if (window.innerWidth <= 700) {
 		vCenter(h1, div);
 		vCenter(div0, div);
+		addBoxesPhoneCE();
 	}
 	return div;
 }

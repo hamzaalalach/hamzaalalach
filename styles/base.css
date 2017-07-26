@@ -226,6 +226,9 @@ section#container div#popUpContainer article#mainContent {
 .active {
 	background-color: #00FFF6;
 }
+.noscroll { 
+	overflow: hidden;
+}
 @media all and (max-height: 700px) {
 	aside {
 		font-size: 0.8em;
@@ -307,13 +310,10 @@ section#container div#popUpContainer article#mainContent {
 	}
 	.boxTitle {
 		position: relative;
-		float: left;
-		width: 60%;
+		text-align: center;
 	}
 	.bxDetContainer {
-		display: inline;
-		float: right;
-		width: 40%;
+		display: none;
 	}
 }
 @keyframes arrow {
