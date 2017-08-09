@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"add",
+				"addBoxesHoverEvent"
+			],
+			[
 				"boy",
 				"bodyParser"
 			],
@@ -26,10 +30,6 @@
 			[
 				"inenr",
 				"innerHeight"
-			],
-			[
-				"add",
-				"addEventListener"
 			],
 			[
 				"cu",
@@ -523,7 +523,39 @@
 			"file": "index.js",
 			"settings":
 			{
-				"buffer_size": 692,
+				"buffer_size": 741,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "models/story.js",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "routes/home.js",
+			"settings":
+			{
+				"buffer_size": 212,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bin/actions.js",
+			"settings":
+			{
+				"buffer_size": 870,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 276,
 				"line_ending": "Windows"
 			}
 		}
@@ -536,9 +568,17 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "Snippet:",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"S",
+				"Snippet: html"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
 			[
 				"Snippet:",
 				"Snippet: Object Value JS"
@@ -554,10 +594,6 @@
 			[
 				"sne",
 				"Snippet: html"
-			],
-			[
-				"html",
-				"Set Syntax: HTML"
 			]
 		],
 		"width": 424.0
@@ -582,12 +618,16 @@
 	[
 		"/C/xampp/htdocs/hamzaalalach",
 		"/C/xampp/htdocs/hamzaalalach/bin",
-		"/C/xampp/htdocs/hamzaalalach/public",
-		"/C/xampp/htdocs/hamzaalalach/public/images",
+		"/C/xampp/htdocs/hamzaalalach/models",
 		"/C/xampp/htdocs/hamzaalalach/views"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/todolist/routes/home.js",
+		"/C/xampp/htdocs/hamzaalalach/public/scripts/base.js",
+		"/C/xampp/htdocs/todolist/models/task.js",
+		"/C/xampp/htdocs/hamzaalalach/app.js",
+		"/C/Users/alala/Desktop/app.js",
 		"/C/xampp/htdocs/hamzaalalach/bin/www",
 		"/C/xampp/htdocs/hamzaalalach/package.json",
 		"/C/xampp/htdocs/todolist/package.json",
@@ -710,12 +750,7 @@
 		"/C/xampp/htdocs/Project/_scripts/tweets.js",
 		"/C/Users/medalch/Desktop/Hamza/New folder/index.html",
 		"/C/Users/medalch/Desktop/Hamza/dom/_/js/myscript.js",
-		"/C/Users/medalch/Desktop/Hamza/ajax/script.js",
-		"/C/xampp/htdocs/Project/_scripts/responsiveIndex.js",
-		"/C/xampp/htdocs/Project/_scripts/base.js",
-		"/C/xampp/htdocs/Project/_css/index.css",
-		"/C/Users/medalch/Desktop/Hamza/NiceSimpleContactForm/contactengine.php",
-		"/C/Users/medalch/Desktop/Hamza/hamzaalalach.bugs3.com/index.htm"
+		"/C/Users/medalch/Desktop/Hamza/ajax/script.js"
 	],
 	"find":
 	{
@@ -733,6 +768,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"box",
+			"\n		",
+			"();\n",
 			"box",
 			"div",
 			"var boxes",
@@ -857,10 +895,7 @@
 			"sidebar",
 			"()\n",
 			"section",
-			"todoList",
-			";\n",
-			"store",
-			"gItems"
+			"todoList"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -878,7 +913,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -887,15 +922,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 692,
+						"buffer_size": 741,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								692,
-								692
+								649,
+								649
 							]
 						],
 						"settings":
@@ -906,7 +941,121 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "models/story.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								215
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "routes/home.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "bin/actions.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								251
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1028,7 +1177,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 221.0,
 	"status_bar_visible": true,
 	"template_settings":

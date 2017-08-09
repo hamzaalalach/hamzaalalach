@@ -60,6 +60,7 @@ function loadpuData(box) {
 	document.getElementById('popUpTitle').innerHTML = box.getElementsByClassName('boxTitle')[0].innerHTML;
 	document.getElementById('puCategory').innerHTML = box.getElementsByClassName('boxCategory')[0].innerHTML;
 	document.getElementById('puDate').innerHTML = box.getElementsByClassName('boxDate')[0].innerHTML;
+  document.getElementById('mainContent').innerHTML = box.getElementsByClassName('hidden')[0].innerHTML;
 }
 function addBoxesHoverEvent() {
 	currentDiv.addEventListener('mouseover', function(e) {
@@ -174,7 +175,7 @@ function addBoxesMoveEvent() {
 		storage = {};
 	});
 }
-function Box(title, date, categ, size) {
+function Box(title, date, categ, content, size) {
 	var colors = ['#00FFFF', '#1560FB', '#000', '#FFB90F', '#00EE00', '#FF6A6A', '#AB82FF', '#FFEC8B', '#FF8247', '#9ACD32'],
 		div = document.createElement('div'),
 		h1 = document.createElement('h1'),
@@ -182,7 +183,8 @@ function Box(title, date, categ, size) {
 		p2 = document.createElement('p'),
 		h21 = document.createElement('h2'),
 		h22 = document.createElement('h2'),
-		div0 = document.createElement('div');
+		div0 = document.createElement('div'),
+    p3 = document.createElement('p');
 	div.className = 'box';
 	h1.className = 'boxTitle';
 	p2.className = 'boxDetails boxDate';
@@ -190,17 +192,20 @@ function Box(title, date, categ, size) {
 	h21.className = 'boxHeader';
 	h22.className = 'boxHeader';
 	div0.className = 'bxDetContainer';
+  p3.className = 'hidden';
 	h1.innerHTML = title;
 	p2.innerHTML = date;
 	p1.innerHTML = categ;
 	h21.innerHTML = 'Category:';
 	h22.innerHTML = 'Added:';
+  p3.innerHTML = content;
 	div0.appendChild(h21);
 	div0.appendChild(p1);
 	div0.appendChild(h22);
 	div0.appendChild(p2);
 	div.appendChild(h1);
 	div.appendChild(div0);
+  div.appendChild(p3);
 	div.setAttribute('data-category', categ);
 	currentDiv = div;
 	div.style.backgroundColor = colors[Math.floor(Math.random()*10)];
@@ -208,7 +213,7 @@ function Box(title, date, categ, size) {
 		applySize(size);
 		fullWidth = getComputedStyle(div).width;
 		if (fullWidth[fullWidth.length] == '%') {
-			div.style.height = fullWidth; 
+			div.style.height = fullWidth;
 		} else {
 			div.style.height = calcHeightInpx(new Number(fullWidth[0] + fullWidth[1]));
 		}
@@ -217,6 +222,7 @@ function Box(title, date, categ, size) {
 	if (window.innerWidth > 700) {
 		addBoxesClickEvent();
 		addBoxesMoveEvent();
+		addBoxesHoverEvent();
 		randomPos();
 	}
 	if (window.innerWidth <= 700) {
@@ -267,15 +273,3 @@ window.addEventListener('load', function() {
 		});
 	}
 })();
-Box('Music I love', '2017/07/14', 'about me', 'l');
-Box('Upload files using nodeJS', '2017/07/14', 'blog', 'l')
-Box('Todo app', '2017/07/14', 'portfolio', 'l')
-Box('Music I love', '2017/07/14', 'about me', 'l');
-Box('Upload files using nodeJS', '2017/07/14', 'blog', 'l')
-Box('Todo app', '2017/07/14', 'portfolio', 'l')
-Box('Music I love', '2017/07/14', 'about me', 'l');
-Box('Upload files using nodeJS', '2017/07/14', 'blog', 'l')
-Box('Todo app', '2017/07/14', 'portfolio', 'l')
-Box('Music I love', '2017/07/14', 'about me', 'l');
-Box('Upload files using nodeJS', '2017/07/14', 'blog', 'l')
-Box('Todo app', '2017/07/14', 'portfolio', 'l')
