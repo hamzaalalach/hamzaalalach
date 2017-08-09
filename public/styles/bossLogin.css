@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+  width: 100%;
+	background-color: #060B14;
+  display: table;
+}
+section#container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+section#container h1 {
+  font-family: nova-mono, sans-serif;
+  color: #FFF;
+  font-size: 2em;
+  text-transform: capitalize;
+  text-shadow: 0 0 0.7em #000;
+}
+section#container input#password {
+  font-family: nova-mono, sans-serif;
+  width: 16em;
+  border: 0;
+  background-color: #333;
+  color: #666;
+  line-height: 1.2em;
+  font-size: 1.3em;
+  border-radius: 5em;
+  padding: 0 0.8em;
+  text-align: center;
+  box-shadow: 0 0 1em #000;
+}
+section#container input#username, input#submit {
+  display: none;
+}
+@media all and (max-width: 500px){
+  section#container input#password {
+    width: 90%;
+  }
+}
