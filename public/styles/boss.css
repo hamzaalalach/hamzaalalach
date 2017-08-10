@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+section#left {
+  position: relative;
+  width: 50%;
+  background-color: #1560FB;
+  float: left;
+  height: 100%;
+  text-align: center;
+}
+section#right {
+  position: relative;
+  width: 50%;
+  background-color: #060B14;
+  float: right;
+}
+section#left div#post {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+section#left div#post h1 {
+  font-family: nova-mono, sans-serif;
+  text-indent: 1em;
+  color: #FFF;
+  text-transform: capitalize;
+  text-align: left;
+}
+section#left div#post input#title, section#left div#post select, section#left div#post textarea {
+  position: relative;
+  font-family: nova-mono, sans-serif;
+  width: 90%;
+  border: 0;
+  background-color: #333;
+  color: #666;
+  line-height: 1.2em;
+  font-size: 1.3em;
+	-webkit-border-radius: 5em;
+	-khtml-border-radius: 5em;
+	-moz-border-radius: 5em;
+	border-radius: 5em;
+  padding: 0 0.8em;
+  text-align: center;
+  box-shadow: 0 0 1em #000;
+  background-color: #060B14;
+  color: #1560FB;
+}
+section#left div#post div#postOptions {
+  position: relative;
+  width: 100%;
+}
+section#left div#post div#postOptions button#cancelPost, button#postBtn {
+  position: relative;
+  font-family: nova-mono, sans-serif;
+  width: 50%;
+  border: 0;
+  box-shadow: 0 0 1em #000;
+  font-size: 1.3em;
+  color: #1560FB;
+  background-color: #060B14;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+section#left div#post div#postOptions button#cancelPost:hover, button#postBtn:hover {
+  color: #060B14;
+  background-color: #FFF;
+  transition: background-color 0.3s linear;
+}
+#size, #category, #content, #postOptions {
+  display: none;
+}

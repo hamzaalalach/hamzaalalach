@@ -43,21 +43,38 @@ db.on('open', function() {
 		});
 	}
 	exports.createUser = function(username, password) {
-	bcrypt.genSalt(10, function(err, salt) {
-			bcrypt.hash(password, salt, function(err, hash) {
-					if (err) {
-						console.log(err);
-					} else {
-						User.create([{
-							username: username,
-							password: hash
-						}], function(error) {
-							if (error) {
-								console.log(error);
-							}
-						});
-					}
-			});
-	});
-}
+		bcrypt.genSalt(10, function(err, salt) {
+				bcrypt.hash(password, salt, function(err, hash) {
+						if (err) {
+							console.log(err);
+						} else {
+							User.create([{
+								username: username,
+								password: hash
+							}], function(error) {
+								if (error) {
+									console.log(error);
+								}
+							});
+						}
+				});
+		});
+	}
+	exports.createStory = function(title, category, content, size, callback) {
+		var date = new Date(),
+				storyDate = date.getFullYear() + ' - ' + (date.getMonth() + 1) + '/' + date.getDate();
+		Story.create([{
+			date: storyDate,
+			content: content,
+			category: category,
+			title: title,
+			size: size
+		}], function(error, story) {
+			if (error) {
+				console.log(error);
+			} else {
+				callback(story);
+			}
+		});
+	}
 });
