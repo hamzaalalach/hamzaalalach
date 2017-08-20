@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
 	secret: 'secret',
 	saveUninitialized: true,
-	resave: true
+	resave: false
 }));
 app.use(passport.initialize());
 app.use(passport.session());

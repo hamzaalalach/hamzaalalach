@@ -3,7 +3,7 @@ var mongoose = require('mongoose'),
 		User = require('../models/user'),
 		bcrypt = require('bcryptjs'),
 		db = mongoose.connection;
-mongoose.connect('mongodb://localhost/hamzaalalach');
+mongoose.connect('mongodb://localhost/hamzaalalach', {useMongoClient: true	});
 db.on('error', console.error.bind(console, 'connection error:'));
 db.on('open', function() {
 	exports.findAll = function(callback) {
@@ -74,6 +74,25 @@ db.on('open', function() {
 				console.log(error);
 			} else {
 				callback(story);
+			}
+		});
+	}
+	exports.removeStory = function(id) {
+		Story.remove({_id: id}, function(error) {
+			if (error) {
+				console.log(error);
+			}
+		});
+	}
+	exports.updateStory = function(id, title, category, content, size, callback) {
+		Story.update({_id: id}, {$set: {title: title, category: category, size: size, content: content}}, function(error) {
+			if (error) {
+				console.log(error);
+			} else {
+				var date = new Date(),
+					storyDate = date.getFullYear() + ' - ' + (date.getMonth() + 1) + '/' + date.getDate();
+				var data = [{_id: id, title: title, category: category, content: content, size: size, date: storyDate}];
+				callback(data);
 			}
 		});
 	}

@@ -11,6 +11,14 @@ body {
 	padding: 0;
 	height: 100%;
 }
+h1 {
+  font-family: nova-mono, sans-serif;
+  text-indent: 1em;
+  color: #FFF;
+  text-transform: capitalize;
+  text-align: left;
+  text-shadow: 0 0 0.5em #FFF;
+}
 section#left {
   position: relative;
   width: 50%;
@@ -24,18 +32,21 @@ section#right {
   width: 50%;
   background-color: #060B14;
   float: right;
+  overflow-y: scroll;
+  height: 100%;
 }
 section#left div#post {
   position: relative;
   width: 100%;
   height: 60%;
 }
-section#left div#post h1 {
+h1 {
   font-family: nova-mono, sans-serif;
   text-indent: 1em;
   color: #FFF;
   text-transform: capitalize;
   text-align: left;
+  text-shadow: 0 0 0.5em #FFF;
 }
 section#left div#post input#title, section#left div#post select, section#left div#post textarea {
   position: relative;
@@ -77,6 +88,140 @@ section#left div#post div#postOptions button#cancelPost:hover, button#postBtn:ho
   background-color: #FFF;
   transition: background-color 0.3s linear;
 }
-#size, #category, #content, #postOptions {
+section#left div#info {
+  position: relative;
+  height: 30%;
+}
+section#left div#info li {
+  list-style-type: none;
+  line-height: 1.6em;
+	font-family: merienda-one, cursive;
+  font-size: 1.1em;
+  text-align: left;
+  color: #060B14;
+  text-shadow: 0 0 0.5em #060B14;
+}
+section#left div#info li p {
+  display: inline;
+}
+section#left div#info li a {
+  text-decoration: none;
+  color: #060B14;
+}
+section#left div#info li span {
+  text-transform: capitalize;
+}
+section#right div.editionContainer {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #0a0f19;
+  margin-top: 0.5em;
+}
+section#right div.editionContainer p {
+  position: relative;
+  color: #1560FB;
+  display: inline-block;
+	font-family: aclonica, sans-serif;
+}
+section#right div.editionContainer p#sContent {
+  display: none;
+}
+section#right div.editionContainer p#sTitle {
+  width: 39%;
+}
+section#right div.editionContainer p#sDate {
+  width: 20%;
+}
+section#right div.editionContainer p#sSize {
+  width: 15%;
+}
+section#right div.editionContainer p#sCateg {
+  width: 20%;
+  text-align: justify;
+  text-transform: capitalize;
+}
+section#right div.editionContainer span.menuBtn {
+  position: relative;
+  color: #1560FB;
+  display: inline-block;
+  width: 3%;
+  text-align: center;
+  cursor: pointer;
+}
+section#right div.editionContainer span.menuBtn:hover {
+  text-shadow: 0 0 1em #FFF;
+  color: #333;
+}
+section#right div#puContainer {
+	position: absolute;
+	width: 350px;
+	height: 450px;
+	background-color: #333;
+	color: #FFF;
+	margin: 0;
+	box-shadow: 0 0 1em #000;
+  z-index: 100;
+}
+section#right div#puContainer p {
+	padding: 0.7em;
+	text-align: justify;
+	font-family: merienda-one, cursive;
+	font-size: 0.8em;
+}
+section#right div#puContainer span#close {
+  position: absolute;
+  height: 1.6em;
+	bottom: 0;
+  right: 0;
+	background-color: #060B14;
+	color: #FFF;
+	font-weight: bolder;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color, color 1s ease;
+  font-family: nova-mono, sans-serif;
+  padding: 0.4em;
+}
+section#right div#puContainer span#close:hover {
+	color: #1560FB;
+	transition: color 1s ease;
+}
+#menu {
+  position: relative;
+  width: 8em;
+}
+#menu ul {
+  position: absolute;
+  width: 100%;
+  background-color: #666;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 2em #000;
+}
+#menu ul li {
+  list-style-type: none;
+  line-height: 1.8em;
+  width: 100%;
+  margin-top: 0.3em;
+  background-color: #333;
+  color: #666;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: merienda-one, cursive;
+  font-size: 0.7em;
+  transition: color 0.5s linear;
+}
+#menu ul li:first-child {
+  margin-top: 0;
+}
+#menu ul li:hover {
+  color: #222;
+  transition: color 0.5s linear;
+  background-color: #0A0F19;
+}
+#size, #category, #content, #postOptions, #menu, #puContainer {
   display: none;
 }

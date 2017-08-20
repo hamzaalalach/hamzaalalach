@@ -52,10 +52,44 @@
 			</div>
     </div>
     <div id="info">
-
+			<h1>Info</h1>
+			<ul>
+				<li><span>logged as:</span><p> <%=user.username%></p></li>
+				<li><span>n. of stories:</span><p id="storiesL"> <%=user.storiesL%></p></li>
+				<li><span>editing:</span><a href="//hamzaalalach.com" target="_blank"> hamzaalalach.com</a></li>
+			</ul>
     </div>
   </section>
 	<section id="right">
+		<div id="puContainer">
+			<span id="close">close</span>
+			<p id="mainContent"></p>
+		</div>
+		<nav id="menu">
+			<ul>
+				<li id="navShow">show content</li>
+				<li id="navEdit">edit story</li>
+				<li id="navRemove">remove story</li>
+			</ul>
+		</nav>
+		<h1>Edit stories</h1>
+		<div class="editionContainer">
+			<span class="fa fa-ellipsis-v menuBtn" aria-hidden="true"></span>
+			<p id="sTitle">Title</p>
+			<p id="sDate">Date</p>
+			<p id="sSize">Size</p>
+			<p id="sCateg">Category</p>
+		</div>
+		<%for (var i in user.stories) {%>
+			<div class="editionContainer" id="<%=user.stories[i]._id%>">
+				<span class="fa fa-ellipsis-v menuBtn" aria-hidden="true"></span>
+				<p id="sTitle"><%=user.stories[i].title%></p>
+				<p id="sDate"><%=user.stories[i].date%></p>
+				<p id="sSize"><%=user.stories[i].size%></p>
+				<p id="sCateg"><%=user.stories[i].category%></p>
+				<p id="sContent"><%=user.stories[i].content%></p>
+			</div>
+		<%}%>
 	</section>
   <script src="scripts/loBoss.js"></script>
 </body>
